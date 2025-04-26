@@ -1,0 +1,32 @@
+### Get all transactions
+GET http://localhost:5000/transactions/
+Content-Type: application/json
+
+###
+
+### Add a new transaction
+POST http://localhost:5000/transactions
+Content-Type: application/json
+
+{
+  "description": "Car",
+  "amount": 1000000,
+  "date": "2025-05-07"
+}
+
+###
+
+### Update a transaction 
+PUT http://localhost:5000/transactions/6
+Content-Type: application/json
+
+{
+  "description": "Swift Dzire",
+  "amount": 1200000,
+  "date": "2025-04-27"
+}
+
+
+### Delete a transaction 
+DELETE http://localhost:5000/transactions/1
+Content-Type: application/json
